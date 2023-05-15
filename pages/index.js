@@ -1,28 +1,33 @@
-import Head from "next/head";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import FeedbackForm from "@components/FeedbackForm";
-import JokeBlock from "@components/JokeBlock";
+import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
-        <title>Next.js Toolbox</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Semiconductor Business Reviews</title>
       </Head>
 
+      <header>
+        {/* Add navigation menu here */}
+      </header>
+
       <main>
-        <Header title="Next.js Toolbox" />
-        <hr />
-        <p className="description">
-          Here's an example of a Netlify Form! When you fill this out, the
-          submissions can be found in the Netlify Admin site.
-        </p>
-        <FeedbackForm />
-        <JokeBlock />
+        {/* Here you would fetch and map over your data to display the companies */}
+        {/* You could use a library like SWR or axios to fetch data from an API */}
+        {/* This is just a placeholder */}
+        <h1>Welcome to Semiconductor Business Reviews</h1>
+        <p>Under Construction</p>
+
+        <Link href="/submit-review">
+          <a>Submit a Review</a>
+        </Link>
       </main>
-      <Footer />
+
+      <footer>
+        {/* Footer information */}
+      </footer>
+      
     </div>
-  );
+  )
 }
